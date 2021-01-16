@@ -12,12 +12,19 @@ const ParallaxCard = () => {
 
     return (
         <animated.div
-            className="parallax-card mx-auto p-3"
+            className="parallax-card mx-auto p-6 relative"
             onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
             onMouseLeave={() => set({ xys: [0, 0, 1] })}
             style={{ transform: props.xys.interpolate(trans) }}>
             <Image style={{ borderRadius: '50%', display: 'block', marginLeft: 'auto', marginRight: 'auto' }} />
-            <p>Thierry</p>
+            <p className="mt-3">Thierry Schmidt</p>
+            <p>Medizininformatik</p>
+            <div className="mx-auto my-3 h-0.5 bg-pink-700 rounded"></div>
+            <p>HTML, CSS & JS</p>
+            <div className="absolute inset-x-0 bottom-0">
+            <button className="w-full px-4 py-2">Kontaktieren</button>
+            </div>
+
         </animated.div>
     );
 }

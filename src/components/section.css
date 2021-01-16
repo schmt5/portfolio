@@ -1,0 +1,9 @@
+.section {
+    background-color: white;
+    color: var(--fogra-black);
+}
+
+.section.dark {
+    background-color: var(--gunmetal);
+    color: var(--aquamarine);
+}

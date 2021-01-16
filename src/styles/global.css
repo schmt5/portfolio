@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --gunmetal: #002f3c;
+  --aquamarine: #85ffc7;
+  --dark-jungle-green: #002129;
+  --fogra-black: #001014;
+}

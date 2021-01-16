@@ -1,8 +1,9 @@
 .parallax-card {
   width: 80%;
+  max-width: 20rem;
   height: calc(90vh - 4rem);
-  background: #393e46;
-  border-radius: 5px;
+  background: var(--fogra-black);
+  border-radius: 0.5rem;
   box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
   transition: box-shadow 0.5s;
   will-change: transform;
@@ -10,4 +11,15 @@
 
 .parallax-card:hover {
   box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
+}
+
+.parallax-card p {
+  margin-bottom: 0.5rem;
+}
+
+.parallax-card button {
+  background-color: var(--aquamarine);
+  color: var(--fogra-black);
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
 }
