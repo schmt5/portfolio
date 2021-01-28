@@ -6,9 +6,11 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import ParallaxCard from "../components/parallaxCard";
-import Teaser from "../components/teaser";
+import AboutTeaser from "../components/aboutTeaser";
+import ProjectTeaser from "../components/projectTeaser";
 import Section from "../components/section";
-import Divider from "../components/divider"
+import Divider from "../components/divider";
+import Footer from "../components/footer";
 
 const IndexPage = () => (
   <Layout className>
@@ -22,9 +24,14 @@ const IndexPage = () => (
         <ParallaxCard />
       </div>
     </Section>
-    <Divider />
+    <Divider position="end" />
     <Section>
-      <Teaser />
+      <AboutTeaser />
+      <ProjectTeaser />
+    </Section>
+    <Divider position="start" />
+    <Section>
+      <Footer />
     </Section>
 
   </Layout>

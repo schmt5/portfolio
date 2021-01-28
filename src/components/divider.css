@@ -1,7 +1,13 @@
 .divider {
-    background-color: var(--gunmetal);
-    height: 8rem;
-    clip-path: polygon(0 0, 100% 0, 100% 100%);
-    margin-bottom: -4rem;
+  background-color: var(--gunmetal);
+  height: 8rem;
 }
 
+.divider.start {
+  clip-path: polygon(0 100%, 100% 100%, 0 0);
+}
+
+.divider.end {
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
+  margin-bottom: -4rem;
+}
