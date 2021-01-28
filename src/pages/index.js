@@ -30,7 +30,7 @@ const IndexPage = () => (
       <ProjectTeaser />
     </Section>
     <Divider position="start" />
-    <Section>
+    <Section backgroundTheme="dark">
       <Footer />
     </Section>
 
