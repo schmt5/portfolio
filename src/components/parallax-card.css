@@ -1,12 +1,18 @@
 .parallax-card {
   width: 80%;
   max-width: 20rem;
-  height: calc(85vh - 4rem);
+  height: calc(96vh - 8rem);
   background: var(--fogra-black);
   border-radius: 0.5rem;
   box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
   transition: box-shadow 0.5s;
   will-change: transform;
+}
+
+@media screen and (max-width: 767px) {
+  .parallax-card {
+    height: 50vh;
+  }
 }
 
 .parallax-card:hover {
