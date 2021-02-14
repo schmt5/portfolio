@@ -4,7 +4,6 @@ module.exports = {
     description: `Portfolio of Thierry Schmidt`,
     author: `Thierry Schmidt`,
   },
-  flags: { PRESERVE_WEBPACK_CACHE: true },
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
@@ -32,6 +31,14 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
     'gatsby-plugin-postcss',
-    `gatsby-plugin-netlify-cms`
+    `gatsby-plugin-netlify-cms`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-pages`,
+        path: `${__dirname}/blog`,
+      },
+    },
+    `gatsby-transformer-remark`,
   ],
 }
