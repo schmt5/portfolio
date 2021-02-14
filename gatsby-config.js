@@ -4,6 +4,7 @@ module.exports = {
     description: `Portfolio of Thierry Schmidt`,
     author: `Thierry Schmidt`,
   },
+  flags: { PRESERVE_WEBPACK_CACHE: true },
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
@@ -30,6 +31,7 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-    'gatsby-plugin-postcss'
+    'gatsby-plugin-postcss',
+    `gatsby-plugin-netlify-cms`
   ],
 }
